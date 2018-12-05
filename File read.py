@@ -19,7 +19,3 @@ class randw :
    for line in y:
        print(line.strip())
 
-readwrite = randw('lesen.txt',"write.txt")
-
-readwrite.reader()
-readwrite.writer()
