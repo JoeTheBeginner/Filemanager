@@ -5,11 +5,7 @@ class randw :
  def reader(self):
    x = open(self.filename1, "r")
    global liste
-   liste = []
-   for line in x:
-      line = line.strip()
-      liste.append(line)
-   return liste
+   liste = [ line.strip() for line in x]
  def writer(self):
    y = open(self.filename2,'w')
   
@@ -18,4 +14,3 @@ class randw :
    y = open(self.filename2,'r')
    for line in y:
        print(line.strip())
-
